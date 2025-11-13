@@ -6,6 +6,7 @@ For preliminary setup, enter and run below in Windows Powershell (Mac users can 
 **Create a work directory**
   mkdir coursebot
   cd coursebot
+
   
 **Create and activate a virtual environment**
   py -m venv .venv
@@ -25,17 +26,17 @@ For preliminary setup, enter and run below in Windows Powershell (Mac users can 
     pypdf
     python-dotenv
 
-**install these in Powershell**
-  pip install -r requirements.txt
+**Install these in Powershell**
+pip install -r requirements.txt
 
-**now, before you teach the API (one-time thing), make sure you have the training materials (pdf and .md files preferred) saved in**
+**Now, before you teach the API (one-time thing), make sure you have the training materials (pdf and .md files preferred) saved in**
 **the appropriate location listed in build_index.py. The current folder is named "course_materials" and it is located in the work directory**
 **"coursebot" created earlier.** 
 
-**next in Powershell, enter the API key. Below is example using OpenAI (update the key in quotes)**
+**Next in Powershell, enter the API key. Below is example using OpenAI (update the key in quotes)**
 $env:OPENAI_API_KEY="YOUR_API_KEY_HERE"
 
-**now, you are ready to run the training**
+**Now, you are ready to run the training**
 py build_index.py
 
 **To test the app locally, in Powershell:**
