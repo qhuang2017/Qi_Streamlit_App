@@ -58,17 +58,10 @@ def main():
     st.caption("Answers grounded in your course materials.")
 
     # Read API key from Streamlit secrets (preferred) or env var
-    api_key = st.secrets["OPENAI_API_KEY"]
-except Exception:
     api_key = os.getenv("OPENAI_API_KEY")
-
-if not api_key:
-    st.error(
-        "No API key found. Please either:\n"
-        "1) Add OPENAI_API_KEY to Streamlit Secrets (if running on Streamlit Cloud), or\n"
-        "2) Set the OPENAI_API_KEY environment variable (if running locally)."
-    )
-    st.stop()
+    if not api_key:
+        st.error("No API key found. Please set the OPENAI_API_KEY environment variable.")
+        st.stop()
 
 
     client = OpenAI(api_key=api_key)
@@ -136,4 +129,5 @@ Provide a helpful answer and cite like [1], [2] etc. at the end of relevant sent
 
 if __name__ == "__main__":
     main()
+
 
