@@ -64,7 +64,7 @@ py build_index.py
 streamlit run app.py  
 
 **Afterwards**  
-Now, the API should have been "retrained". But you need to upload the updated index.faiss and chunks.pkl files to Github also. Don't forget this step!
+Now, the API should have been "retrained". But you need to upload the updated **index.faiss** and **chunks.pkl** files to Github also. Don't forget this step!
 
 
 
