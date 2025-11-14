@@ -47,6 +47,7 @@ streamlit run app.py
 
 **These files can be deployed to platforms such as Streamlit.**  
 Now, the API is ready, you just need to upload the below files (in your own cd directory) to your Github repository - remember to set this as public!  
+  
 app.py  
 build_index.py  
 requirements.txt  
