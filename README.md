@@ -54,11 +54,11 @@ streamlit run app.py
 Oftentimes, we need to update the components and training materials for the chatbot. If you are simply updating the training materials, for example, follow the below routine. 
 
 **In Powershell** 
-cd coursebot
-py -m venv .venv
-.venv\Scripts\activate
-$env:OPENAI_API_KEY="YOUR_API_KEY_HERE"
-py build_index.py
+cd coursebot  
+py -m venv .venv  
+.venv\Scripts\activate  
+$env:OPENAI_API_KEY="YOUR_API_KEY_HERE"  
+py build_index.py  
 
 **Afterwards**
 Now, the API should have been "retrained". But you need to upload the index.faiss and chunks.pkl files to Github also. Don't forget this part!
