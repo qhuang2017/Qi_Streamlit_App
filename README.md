@@ -42,10 +42,16 @@ $env:OPENAI_API_KEY="YOUR_API_KEY_HERE"
 **Now, you are ready to run the training**  
 py build_index.py
 
-**To test the app locally, in Powershell:**  
+**(Optionally) To test the app locally, in Powershell:**  
 streamlit run app.py
 
-**These files can be deployed to platforms such as Streamlit.**
+**These files can be deployed to platforms such as Streamlit.**  
+Now, the API is ready, you just need to upload the below files (in your own cd directory) to your Github repository - remember to set this as public!  
+app.py  
+build_index.py  
+requirements.txt  
+index.faiss  
+chunks.pkl  
 
 **Side notes: if using OpenAI, you can cap the token/usage limits so that you don't get surprise bills**
 **The specific AI model can be changed in app.py. Current model is specified to be gpt-4o-mini**
