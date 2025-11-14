@@ -3,12 +3,14 @@ To set up your own Chatbot leveraging this Streamlit App, you first need to
   (2) have access to an AI API (i.e. OpenAI, Snowflake, Claude, etc.)
 
 For preliminary setup, enter and run below in Windows Powershell (Mac users can also achieve this, but the code varies):
-**Create a work directory**
+**Create a work directory (only need to run once-when you are creating the folder/directory for the app)**
   mkdir coursebot
+  
+**Set directory to this folder**
   cd coursebot
 
   
-**Create and activate a virtual environment**
+**Create and activate a virtual environment (depending on your installation, "py" may be called "python" below)**
   py -m venv .venv
 
   .venv\Scripts\activate
