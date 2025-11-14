@@ -1,3 +1,4 @@
+## Initial Setup
 To set up your own Chatbot leveraging this Streamlit App, you first need to
   (1) make sure Python is installed (v 3.10 or above), AND
   (2) have access to an AI API (i.e. OpenAI, Snowflake, Claude, etc.)
@@ -48,3 +49,20 @@ streamlit run app.py
 
 **Side notes: if using OpenAI, you can cap the token/usage limits so that you don't get surprise bills**
 **The specific AI model can be changed in app.py. Current model is specified to be gpt-4o-mini**
+
+## When Updating the Streamlit Chatbot
+Oftentimes, we need to update the components and training materials for the chatbot. If you are simply updating the training materials, for example, follow the below routine. 
+
+**In Powershell** 
+cd coursebot
+py -m venv .venv
+.venv\Scripts\activate
+$env:OPENAI_API_KEY="YOUR_API_KEY_HERE"
+py build_index.py
+
+**Afterwards**
+Now, the API should have been "retrained". But you need to upload the index.faiss and chunks.pkl files to Github also. Don't forget this part!
+
+
+
+
